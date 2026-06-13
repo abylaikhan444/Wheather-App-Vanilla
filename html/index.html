@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1><img class="cloudy-image" src="/img/sun.png" alt=""> Погода</h1>
+
+        <div class="search">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Введи город..."
+            />
+            <button id="searchBtn">Найти</button>
+        </div>
+
+        <!-- Лоадер — скрыт по умолчанию -->
+        <div id="loader" class="hidden">Загружаю...</div> 
+
+        <!-- Ошибка — скрыта по умолчанию -->
+        <div id="error" class="hidden"></div>
+
+        <!-- Результат — скрыт по умолчанию -->
+        <div id="result" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temp"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
