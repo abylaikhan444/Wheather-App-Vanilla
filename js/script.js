@@ -32,7 +32,7 @@ async function getWeather(city) {
 
 
 
-//& 3. Напиши функцию showResult(data) которая:
+//& 3. функциz showResult(data) которая:
 //^    - показывает блок #result
 //^    - заполняет cityName — data.name
 //^    - заполняет temp — data.main.temp + '°C'
@@ -52,7 +52,7 @@ function showResult(data) {
     humidity.textContent = 'Влажность: ' + data.main.humidity + '%';
 }
 
-//& 4. Напиши функцию showError(message) которая:
+//& 4. функция showError(message) которая:
 //^    - показывает блок #error с текстом ошибки
 
 function showError(message) {
@@ -60,7 +60,7 @@ function showError(message) {
     error.textContent = message;
 }
 
-//& 5. Напиши функцию handleSearch() которая:
+//& 5. функция handleSearch() которая:
 //^    - берёт значение из input
 //^    - если пустое — ничего не делает
 //^    - показывает лоадер, скрывает result и error
@@ -98,7 +98,7 @@ async function handleSearch() {
     // 4. в finally — скрыть loader
 }
 
-//& 6. Повесь события:
+//& 6. события:
 //!    - клик на кнопку → handleSearch()
 searchButton.addEventListener('click', () => {
     handleSearch();
